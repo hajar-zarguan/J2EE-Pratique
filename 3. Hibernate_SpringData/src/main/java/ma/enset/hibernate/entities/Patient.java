@@ -7,7 +7,6 @@ import java.io.Serializable;
 import java.util.Date;
 /// Java Bean
 @Entity // obligatoire pour montrer que cette classe et persistante
-
 @Data  // lambok va ajouter getters et setters
 @NoArgsConstructor // lambok va ajouter un constructeur sans parametre
 @AllArgsConstructor// lambok

@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.Date;
 import java.util.List;
 
+
 public interface PatientRepository extends JpaRepository<Patient, Long>, Pageable {
 public List<Patient> findAllByMalade(boolean m);
 public Page<Patient> findPatientByMalade(Boolean m , Pageable pageable);
