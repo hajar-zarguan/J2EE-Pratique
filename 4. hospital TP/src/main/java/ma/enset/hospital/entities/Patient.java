@@ -17,10 +17,8 @@ public class Patient {
     private  Long id ;
     private  String nom ;
     private  Boolean malade;
-
     //@Temporal(TemporalType.DATE)
     private Date dateNaissance ;
-
     private  String email ;
     @OneToMany(mappedBy = "patient",fetch =  FetchType.LAZY)
     private Collection<RendezVous> rendezVous ;
