@@ -1,13 +1,13 @@
-package com.example.heritage;
+package ma.enset._3_orm_heritage;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HeritageApplicationTests {
+class ApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
