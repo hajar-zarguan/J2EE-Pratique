@@ -29,12 +29,16 @@
                     <td th:text="${p.malade}"></td>
                     <td th:text="${p.score}"></td>
                 </tr>
-
                 </tbody>
-
-
-
             </table>
+            <ul class="nav nav-pills">
+                <li th:each="page,status:${pages}">
+                    <a th:class="${status.index==currentPage}?'ms-1 btn btn-primary':'btn btn-outline-primary ms-1 '"
+                       th:text ="${status.index}"
+                    th:href="@{index(page=${status.index})}"
+                    ></a>
+                </li>
+            </ul>
 
         </div>
 
